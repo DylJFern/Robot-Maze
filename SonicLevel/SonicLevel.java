@@ -12,7 +12,7 @@ public class SonicLevel
   public static void main(String[] args) 
   {
     //Tell the user what they need to do
-    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (11, 11).   \nGood luck!", "Level 3", JOptionPane.INFORMATION_MESSAGE); 
+    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (11, 11).   \nGood luck!", "Level 3", JOptionPane.INFORMATION_MESSAGE); 
     
     //Declare the initial variable(s)
     int lives = 3;
@@ -34,11 +34,17 @@ public class SonicLevel
     william.setIcon(new GuardBotDesign());
     SonicGuardBot4 dylan = new SonicGuardBot4(sonicLVL, 5, 10, Direction.EAST);
     dylan.setIcon(new GuardBotDesign());
+    SonicGuardBot5 paul = new SonicGuardBot5(sonicLVL, 18, 20, Direction.NORTH);
+    paul.setIcon(new GuardBotDesign());
+    SonicGuardBot6 seewin = new SonicGuardBot6(sonicLVL, 9, 4, Direction.EAST);
+    seewin.setIcon(new GuardBotDesign());
     
     Thread baileyThread = new Thread(bailey); 
     Thread dinithThread = new Thread(dinith);  
     Thread williamThread = new Thread(william); 
     Thread dylanThread = new Thread(dylan);
+    Thread paulThread = new Thread(paul);
+    Thread seewinThread = new Thread(seewin);
     
     //Create the things
     Thing Ring1 = new Thing(sonicLVL, 13, 10);
@@ -281,6 +287,8 @@ public class SonicLevel
     dinithThread.start(); 
     williamThread.start();  
     dylanThread.start();
+    paulThread.start();
+    seewinThread.start();
     
     while(true) 
     { 
@@ -303,7 +311,9 @@ public class SonicLevel
       if(baquial.getIntersection() == bailey.getIntersection()
            || baquial.getIntersection() == william.getIntersection()
            || baquial.getIntersection() == dinith.getIntersection()
-           || baquial.getIntersection() == dylan.getIntersection())
+           || baquial.getIntersection() == dylan.getIntersection()
+           || baquial.getIntersection() == paul.getIntersection()
+           || baquial.getIntersection() == seewin.getIntersection())
       {
         int inventory = baquial.countThingsInBackpack();
         baquial.crash();  

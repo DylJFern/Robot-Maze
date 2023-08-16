@@ -9,17 +9,17 @@ import javax.swing.*;
 
 public class SonicBot extends RobotSE
 {
-  public SonicBot(City aCity, int ave, int str, Direction dir) 
+  public SonicBot(City aCity, int str, int ave, Direction dir) 
   { 
-    super(aCity, ave, str, dir); 
+    super(aCity, str, ave, dir); 
   }
   
-  public SonicBot(City aCity, int ave, int str, Direction dir, int aThing) 
+  public SonicBot(City aCity, int str, int ave, Direction dir, int aThing) 
   { 
-    super(aCity, ave, str, dir, aThing); 
+    super(aCity, str, ave, dir, aThing); 
   }
   
-  public void keyTyped (char key) 
+  public void keyTyped(char key) 
   {
     //Key command for when the user presses the 'w' key
     if(key == 'w')

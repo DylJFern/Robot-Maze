@@ -9,9 +9,9 @@ import becker.robots.*;
 public class MushroomGuardBot3 extends RobotSE implements Runnable
 {
   // static Thread t = new Thread();
-  public MushroomGuardBot3(City aCity, int ave, int str, Direction dir)
+  public MushroomGuardBot3(City aCity, int str, int ave, Direction dir)
   {
-    super(aCity, ave, str, dir);
+    super(aCity, str, ave, dir);
   }
   
   public void run()

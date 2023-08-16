@@ -12,7 +12,7 @@ public class MushroomLevel
   public static void main(String[] args)
   {
     //Tell the user what they need to do
-    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (16, 9).   \nGood luck!", "Level 1", JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (16, 9).   \nGood luck!", "Level 1", JOptionPane.INFORMATION_MESSAGE);
 
     //Declare the initial variable(s)    
     int lives = 3;

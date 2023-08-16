@@ -9,9 +9,9 @@ import becker.robots.*;
 public class SonicGuardBot2 extends RobotSE implements Runnable
 {
   //static Thread t = new Thread();
-  public SonicGuardBot2(City city, int ave, int str, Direction dir)
+  public SonicGuardBot2(City city, int str, int ave, Direction dir)
   {
-    super(city, ave, str, dir);
+    super(city, str, ave, dir);
   }
   
   public void run()
