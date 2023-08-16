@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: Main program for the PokeLevel
  */
 
@@ -12,7 +12,7 @@ public class PokeLevel
   public static void main(String[] args) 
   {
     //Tell the user what they need to do
-    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (8, 6).   \nGood luck!", "Level 2", JOptionPane.INFORMATION_MESSAGE); 
+    JOptionPane.showMessageDialog(null, "You have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (8, 6).   \nGood luck!", "Level 2", JOptionPane.INFORMATION_MESSAGE); 
     
     //Declare the initial variable(s)
     int lives = 3;
@@ -30,8 +30,10 @@ public class PokeLevel
     dinith.setIcon(new GuardBotDesign());
     PokeGuardBot2 dylan = new PokeGuardBot2(pokeLVL, 7, 3, Direction.EAST);
     dylan.setIcon(new GuardBotDesign());
+    dylan.setSpeed(5);
     PokeGuardBot3 william = new PokeGuardBot3(pokeLVL, 8, 5, Direction.NORTH);
     william.setIcon(new GuardBotDesign());
+    william.setSpeed(1);
     
     Thread dinithThread = new Thread(dinith);
     Thread dylanThread = new Thread(dylan);
@@ -216,21 +218,7 @@ public class PokeLevel
         baquial.turnAround();
         baquial.move();
       }
-      
-//      else if (baquial.getStreet() == 8 && baquial.getAvenue() == 6 && baquial.countThingsInBackpack() != 24 && baquial.isFacingWest())
-//        {
-//          //If the user doesnt have the required amount of things at the intersection (8,6) they will be told to collect more things and will be moved out of that location
-//          JOptionPane.showMessageDialog(null, "You need to collect more things! Keep collecting!", "Pokeball Level", JOptionPane.INFORMATION_MESSAGE);
-//          baquial.move(); 
-//        }
-//        else if (baquial.getStreet() == 8 && baquial.getAvenue() == 6 && baquial.countThingsInBackpack() != 24)
-//        {
-//          //If the user doesnt have the required amount of things at the intersection (8,6) they will be told to collect more things and will be moved out of that location
-//          JOptionPane.showMessageDialog(null, "You need to collect more things! Keep collecting!", "Pokeball Level", JOptionPane.INFORMATION_MESSAGE);
-//          baquial.turnAround();
-//          baquial.move(); 
-//        }
-      
+           
       //If the GuardBot(s) are at the same intersection as the PokeBot baquial, the bot will "crash"
       if(baquial.getIntersection() == william.getIntersection()
            || baquial.getIntersection() == dinith.getIntersection()

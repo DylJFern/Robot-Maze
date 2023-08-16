@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: GuardBot for the SonicLevel
  */
 
@@ -16,31 +16,25 @@ public class SonicGuardBot6 extends RobotSE implements Runnable
   
   public void run()
   {
-    int i = 0;
     //Movement for SonicGuardBot6
     while(true)
     {
-      if(i >= 7) {
-        i = 0;
-      }
-      else if(i < 4)
+      for(int i = 0; i < 4; i++)
       {
         this.setSpeed(3);
         this.move(4);
-        this.turnAround();
         this.setSpeed(8);
-        this.move(4);
         this.turnAround();
         this.move(4);
         this.turnAround();
-        i++;
+        this.move(4);
+        this.turnAround();
       }
-      else
+      for(int j = 0; j < 3; j++)
       {
         this.setSpeed(10);
         this.move(4);
         this.turnAround();
-        i++;
       }
     }
   }

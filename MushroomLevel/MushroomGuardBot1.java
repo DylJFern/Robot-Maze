@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: GuardBot for the MushroomLevel
  */
 
@@ -8,7 +8,7 @@ import becker.robots.*;
 
 public class MushroomGuardBot1 extends RobotSE implements Runnable
 {
-  // static Thread t = new Thread();
+  //static Thread t = new Thread();
   public MushroomGuardBot1(City aCity, int str, int ave, Direction dir)
   {
     super(aCity, str, ave, dir);
@@ -16,60 +16,57 @@ public class MushroomGuardBot1 extends RobotSE implements Runnable
   
   public void run()
   {
-    int i = 0;
     //Movement for MushroomGuardBot1
     while(true)
     {
-      this.setSpeed(2);
-      this.move();
-      this.turnLeft();
-      this.move();
-      this.turnRight();
-      this.move();
-      this.turnLeft();
-      this.move();
-      this.turnRight();
-      this.move();
-      this.turnRight();
-      this.move();
-      this.turnLeft();
-      this.move();
-      this.turnRight();
-      this.move();
-      this.turnLeft();
-      this.move();
-      this.turnAround();
-      this.move(5);
-      this.turnAround();
-      i++;
-      
-      if(i == 2)
+      for(int i = 0; i < 2; i++)
       {
-        this.setSpeed(3);
+        this.setSpeed(2);
+        this.move();
         this.turnLeft();
-        this.move(2);
+        this.move();
         this.turnRight();
-        this.move(3);
+        this.move();
+        this.turnLeft();
+        this.move();
         this.turnRight();
-        this.move(2);
-        this.turnLeft();
-        this.move(2);
-        this.turnLeft();
-        this.move(2);
-        this.turnLeft();
-        this.move(3);
-        this.turnLeft();
-        this.move(2);
+        this.move();
         this.turnRight();
-        this.move(2);
+        this.move();
+        this.turnLeft();
+        this.move();
+        this.turnRight();
+        this.move();
+        this.turnLeft();
+        this.move();
         this.turnAround();
-        i = 0;
+        this.move(5);
+        this.turnAround();
       }
+      this.setSpeed(5);
+      this.turnLeft();
+      this.move(2);
+      this.turnRight();
+      this.move(3);
+      this.turnRight();
+      this.move(2);
+      this.turnLeft();
+      this.move(2);
+      this.turnLeft();
+      this.move(2);
+      this.turnLeft();
+      this.move(3);
+      this.turnLeft();
+      this.move(2);
+      this.turnRight();
+      this.move(2);
+      this.turnAround(); 
     }
   }
 }
-  
-  
-  
-  
-  
+
+
+
+
+
+

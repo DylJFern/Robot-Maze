@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: GuardBot for the SonicLevel
  */
 
@@ -47,7 +47,17 @@ public class SonicGuardBot5 extends RobotSE implements Runnable
       this.turnRight();
       this.move(6);
       this.setSpeed(12);
-      this.turnAround();
+      this.turnLeft();
+      this.move(2);
+      this.turnLeft();
+      this.move();
+      this.turnLeft();
+      this.move();
+      this.turnLeft();
+      this.move();
+      this.turnRight();
+      this.move();
+      this.turnRight();
       this.move(6);
       this.turnLeft();
       this.move();

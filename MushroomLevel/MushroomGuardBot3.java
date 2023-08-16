@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16 2023
  *Description: GuardBot for the MushroomLevel
  */
 
@@ -8,7 +8,7 @@ import becker.robots.*;
 
 public class MushroomGuardBot3 extends RobotSE implements Runnable
 {
-  // static Thread t = new Thread();
+  //static Thread t = new Thread();
   public MushroomGuardBot3(City aCity, int str, int ave, Direction dir)
   {
     super(aCity, str, ave, dir);

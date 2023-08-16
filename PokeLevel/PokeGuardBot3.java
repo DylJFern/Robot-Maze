@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: GuardBot for the PokeLevel
  */
 
@@ -8,7 +8,7 @@ import becker.robots.*;
 
 public class PokeGuardBot3 extends RobotSE implements Runnable
 { 
-  // static Thread t = new Thread();
+  //static Thread t = new Thread();
   public PokeGuardBot3 (City city, int str, int ave, Direction dir)
   {
     super(city, str, ave, dir);
@@ -19,7 +19,6 @@ public class PokeGuardBot3 extends RobotSE implements Runnable
     //Movement for PokeGuardBot3
     while(true)
     {
-      this.setSpeed(1);
       this.move();
       this.turnRight();
       this.move(3);

@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: Main program for the MushroomLevel
  */
 
@@ -12,7 +12,7 @@ public class MushroomLevel
   public static void main(String[] args)
   {
     //Tell the user what they need to do
-    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (16, 9).   \nGood luck!", "Level 1", JOptionPane.INFORMATION_MESSAGE);
+    JOptionPane.showMessageDialog(null, "You have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (16, 9).   \nGood luck!", "Level 1", JOptionPane.INFORMATION_MESSAGE);
 
     //Declare the initial variable(s)    
     int lives = 3;
@@ -34,6 +34,7 @@ public class MushroomLevel
     william.setIcon(new GuardBotDesign());
     MushroomGuardBot4 bailey = new MushroomGuardBot4(mushroomLVL, 13, 5, Direction.EAST);
     bailey.setIcon(new GuardBotDesign());
+    bailey.setSpeed(4);
     
     Thread dinithThread = new Thread(dinith);
     Thread dylanThread = new Thread(dylan);

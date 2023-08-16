@@ -1,6 +1,6 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
- *Last Modified: August 15, 2023
+ *Last Modified: August 16, 2023
  *Description: Main program for the SonicLevel
  */
 
@@ -12,7 +12,7 @@ public class SonicLevel
   public static void main(String[] args) 
   {
     //Tell the user what they need to do
-    JOptionPane.showMessageDialog(null, "\nYou have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (11, 11).   \nGood luck!", "Level 3", JOptionPane.INFORMATION_MESSAGE); 
+    JOptionPane.showMessageDialog(null, "You have three lives to collect all the things.\nWhen you have all the things go to position (y, x) = (11, 11).   \nGood luck!", "Level 3", JOptionPane.INFORMATION_MESSAGE); 
     
     //Declare the initial variable(s)
     int lives = 3;
@@ -28,8 +28,10 @@ public class SonicLevel
     //Create the link between this file and the "ThreadBot" files 
     SonicGuardBot1 bailey = new SonicGuardBot1(sonicLVL, 2, 6, Direction.EAST);  
     bailey.setIcon(new GuardBotDesign());
+    bailey.setSpeed(9);
     SonicGuardBot2 dinith = new SonicGuardBot2(sonicLVL, 12, 19, Direction.WEST);  
     dinith.setIcon(new GuardBotDesign());
+    dinith.setSpeed(3);
     SonicGuardBot3 william = new SonicGuardBot3(sonicLVL, 15, 3, Direction.NORTH);
     william.setIcon(new GuardBotDesign());
     SonicGuardBot4 dylan = new SonicGuardBot4(sonicLVL, 5, 10, Direction.EAST);

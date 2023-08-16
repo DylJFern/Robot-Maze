@@ -33,5 +33,6 @@ public class GuardBotDesign extends Icon
     g.setColor(Color.RED); 
     g.fillOval(35, 40, 10, 10); 
     g.fillOval(55, 40, 10, 10); 
+
   }
 }
