@@ -1,22 +1,21 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
  *Last Modified: August 15, 2023
- *Description: SonicBot for the SonicLevel
+ *Description: MushroomBot for the MushroomLevel
  */
 
 import becker.robots.*;
 import javax.swing.*;
 
-public class SonicBot extends RobotSE
+public class MushroomBot extends RobotSE
 {
-  public SonicBot(City aCity, int str, int ave, Direction dir) 
-  { 
-    super(aCity, str, ave, dir); 
+  public MushroomBot(City aCity, int ave, int str, Direction dir)
+  {
+    super(aCity, ave, str, dir); 
   }
-  
-  public SonicBot(City aCity, int str, int ave, Direction dir, int aThing) 
-  { 
-    super(aCity, str, ave, dir, aThing); 
+  public MushroomBot(City aCity, int ave, int str, Direction dir, int aThing)
+  {
+    super(aCity, ave, str, dir, aThing); 
   }
   
   public void keyTyped (char key) 
@@ -162,3 +161,9 @@ public class SonicBot extends RobotSE
     }
   }
 }
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 /*Credit to: Bailey, Dinith, and William
  *Created: June 15, 2015
  *Last Modified: August 15, 2023
- *Description: Design for the for SonicBot
+ *Description: Design for the SonicBot
  */
 
 import becker.robots.icons.*;

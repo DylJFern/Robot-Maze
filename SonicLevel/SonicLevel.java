@@ -340,7 +340,7 @@ public class SonicLevel
         //If the user has no lives left, they will be informed the game is over and the program will close
         else if(lives == 0) 
         {
-          JOptionPane.showMessageDialog (null, "You have have ran our of lives! Game over!   ", "Game over", JOptionPane.INFORMATION_MESSAGE);
+          JOptionPane.showMessageDialog (null, "You have ran out of lives! Game over!   ", "Game Over", JOptionPane.INFORMATION_MESSAGE);
           System.exit(0);
         }
       }
