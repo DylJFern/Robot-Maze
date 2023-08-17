@@ -163,7 +163,7 @@ public class MushroomLevel
         JOptionPane.showMessageDialog(null, "You beat the first level! Congratulations!   ", "Mushroom Level", JOptionPane.INFORMATION_MESSAGE);
         System.exit(0);       
       }
-      else if(baquial.getStreet() == 16 && baquial.getAvenue() == 9 && baquial.countThingsInBackpack() != 13)
+      else if(baquial.getStreet() == 16 && baquial.getAvenue() == 9 && baquial.countThingsInBackpack() != 8)
       {
         //If the user doesnt have the required amount of things and is at the intersection (16,9) they will be told to collect more things and will be moved out of that location
         String msg1 = String.format("You have collected %d/8 things. Keep collecting!   ", baquial.countThingsInBackpack());
